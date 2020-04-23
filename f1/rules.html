@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="assets/libs/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/libs/formstyler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/libs/lobibox/css/lobibox.min.css">
+    <link rel="stylesheet" href="assets/libs/ResponsiveTables/ng_responsive_tables.css">
+    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/libs/aos/aos.css">
+    <link rel="stylesheet" href="assets/libs/flag-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/app.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <svg class="svg-gradients">
+    <lineargradient id="gr-o" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ed0b0e"></stop>
+      <stop offset="100%" style="stop-color:#410a14"></stop>
+    </lineargradient>
+  </svg>
+  <body>
+    <div class="wrapper">
+      <section class="first">
+        <div class="first-scene">
+          <div class="first-scene__car"><img src="assets/img/car.png" alt="car"/>
+            <div class="first-scene__car-smoke"> 
+              <canvas id="main-smoke" width="1000px" height="1000px"></canvas>
+            </div>
+            <div class="first-scene__car-wheel_front"><img src="assets/img/wheel.png" alt="wheel"/>
+            </div>
+            <div class="first-scene__car-wheel_back"><img src="assets/img/wheel.png" alt="wheel"/>
+            </div>
+          </div>
+          <div class="first-scene__copter"><img src="assets/img/copter.png" alt="copter"/>
+            <div class="first-scene__copter-fan"><img src="assets/img/fan.png" alt="fan"/>
+            </div>
+          </div>
+        </div>
+        <div class="soc"><a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#inst"></use>
+            </svg></a><a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#tw"></use>
+            </svg><span>
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#fb"></use>
+              </svg></span></a><a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#tg"></use>
+            </svg><span class="flag-icon flag-icon-gb"></span></a></div>
+        <header class="header" data-aos="fade-down" data-aos-delay="0">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-3 order-1 col-6"><a class="logo" href="/"><img src="assets/img/logo.png" alt="logo"/></a></div>
+              <div class="col-md-6 order-3 order-md-2">
+                <div class="header-nav"> <a class="active" href="/">Home</a><a href="./about.html">About us</a><a href="./invest.html">for investors</a><a href="./news.html">news</a><a href="./faq.html">faq</a><a href="./contacts.html">contacts</a></div>
+              </div>
+              <div class="col-md-3 order-2 order-md-3 col-6 d-flex justify-content-end">
+                <div class="header-btns">
+                  <div class="header-btns-icon">
+                    <svg class="btn-bg" viewBox="0 0 100 100" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+                      <polygon points="20,0 100,0 100,80 80,100 0,100 0,80 0,20"></polygon>
+                    </svg>
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#sign"></use>
+                    </svg>
+                  </div><a class="sign-btn" href="#">sing up</a><a class="login-btn" href="#">login</a>
+                </div>
+                <div class="language"><a href="#"><span class="flag-icon flag-icon-gb"></span></a>
+                  <div class="language-hide">
+                    <div class="language-wrap"><a class="soon" href="#"><span class="flag-icon flag-icon-vn"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-cn"></span></a><a href="#"><span class="flag-icon flag-icon-ru"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-jp"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-de"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-fr"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="row">
+            <div class="col-10" data-aos="fade-right" data-aos-delay="0">
+              <div class="first-subtitle title-line-w">WELCOME TO</div>
+              <div class="first-title">fast formula1 company</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 col-lg-12" data-aos="fade-up" data-aos-delay="0">
+              <div class="first-stat">
+                <div class="first-stat__item">
+                  <div class="first-stat__circle first-stat__circle_1"><img src="assets/img/circle-progress.png" alt="circle-progress"></div>
+                  <div class="first-stat__val"><span class="count">300</span></div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#team"></use>
+                  </svg>
+                  <p>Lorem Ipsum</p>
+                </div>
+                <div class="first-stat__item">
+                  <div class="first-stat__circle first-stat__circle_2"><img src="assets/img/circle-progress.png" alt="circle-progress"></div>
+                  <div class="first-stat__val"><span class="count">3000</span><sup>$</sup></div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#bank"></use>
+                  </svg>
+                  <p>Lorem Ipsum</p>
+                </div>
+                <div class="first-stat__item">
+                  <div class="first-stat__circle first-stat__circle_3"><img src="assets/img/circle-progress.png" alt="circle-progress"></div>
+                  <div class="first-stat__val"><span class="count">300</span></div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <p>Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main class="content">
+        <div class="terms">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="main-title title-line-b">Terms and Conditions</div>
+                <div class="rules-list">
+                  <div class="item">
+                    <h4>Elevation Trade LTD Rules of website use and use of our services and infomation (the &ldquo;Rules&rdquo;)</h4>
+                    <div class="item-text">
+                      <p>
+                        This page (together with the documents which may refer to on it) tells you
+                        the terms on which you may:<br><br>&bull; use the Elevation Trader LTD website at elevationtrader.com
+                        &#x9;&#x9;  (the &ldquo;WebSite&rdquo;);<br>&bull; register as a customer of the WebSite;<br>&bull; participate in our
+                        &#x9;&#x9;  investment solutions and our referral program (as defined below) on the WebSite; and make
+                        &#x9;&#x9;  use of all available to it content of the WebSite.<br><br>
+                      </p>
+                      <p>
+                        Please read these Rules carefully before you start to use the elevationtrader.com (&ldquo;WebSite&rdquo;), use
+                        all or some materials or content, and/or before starting the cooperation with Elevation Trader LTD (&ldquo;Company&rdquo;) via the WebSite. You should understand that by registering and
+                        using our WebSite, using all or some materials or content you signify your acceptance of
+                        this Rules and that you agree to be bound by them. If you do not agree to these Rules,
+                        please refrain from using or visiting the WebSite.<br><br>The WebSite is owned and operated
+                        &#x9;&#x9;  by Elevation Trader LTD (&ldquo;Elevation Trader LTD&rdquo;, &ldquo;Company&rdquo;, &ldquo;We&rdquo; or &ldquo;Us&rdquo;)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>The registration on the WebSite. Account creating prohibitions</h4>
+                    <div class="item-text">
+                      <p>
+                        Access to certain areas of the WebSite will be restricted to registered
+                        members only.<br><br>If you do accept our Rules, We will provide you the personal Elevation Trader LTD account which you will use (by your UserName and Password) to access certain
+                        &#x9;&#x9;  parts of the WebSite. You must treat this information as confidential and you must not
+                        &#x9;&#x9;  disclose it to any third party.<br><br>You confirm that all the details supplied by you when
+                        &#x9;&#x9;  you register are accurate and complete. You agree to notify the Elevation Trader LTD
+                        &#x9;&#x9;  support (admin@elevationtrader.com) promptly of any changes. Should you make any significant
+                        &#x9;&#x9;  change to your details, you must notify Us not less than ten (10) days before the change
+                        &#x9;&#x9;  takes effect.<br><br>We reserve the right to disable any Customer Elevation Traderr LTD
+                        &#x9;&#x9;  account, whether chosen by you or allocated by Us at any time, if in our opinion you have
+                        &#x9;&#x9;  failed to comply with any of the provisions of these Rules.<br><br>In order to operate your
+                        &#x9;&#x9;  account you will have created a Password by your self. You are responsible for the security
+                        &#x9;&#x9;  and proper use of your Password and your Elevation Trader LTD account, including all
+                        &#x9;&#x9;  charges incurred through them. You must inform the Elevation Trader LTD support
+                        &#x9;&#x9;  (admin@elevationtrader.com) immediately if you have any reason to believe that your Password have
+                        &#x9;&#x9;  become known to someone not authorized to use them. If We reasonably believe that there is
+                        &#x9;&#x9;  likely to be a breach of security or misuse of the service or your account, We may change
+                        &#x9;&#x9;  your password immediately and will notify you accordingly.<br><br>You must be prepared to
+                        &#x9;&#x9;  give us your &ldquo;secret question&rdquo; and &ldquo;secret answer&rdquo; for verification purposes in this
+                        &#x9;&#x9;  case.<br><br>The registration on the WebSite consists of:<br><br>&bull; a. acceptance of this
+                        &#x9;&#x9;  Rules;<br>&bull; b. providing of your non-personally-identifying and personal information;<br>&bull;
+                        &#x9;&#x9;  c. confirm of your registration. from this point all content that is available for you as a
+                        &#x9;&#x9;  our customer (&ldquo;Customer&rdquo;, &ldquo;You&rdquo;) on an open access basis, with the exception of your Elevation Trader LTD account.<br>You can not create the Elevation Trader LTD account if you a
+                        &#x9;&#x9;  minor under the laws of their country.<br><br>If you register on the WebSite, this allows
+                        &#x9;&#x9;  you:<br><br>&bull; to make any investment actions;<br>&bull; to get the raferral rewards;<br>&bull; to
+                        &#x9;&#x9;  personalise the service we provide to you in relation to our investment solutions.
+                        &#x9;&#x9;  Registration is required in order to access your Elevation Trader LTD account.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Accessing and Usage of the WebSite and Services</h4>
+                    <div class="item-text">
+                      <p>
+                        Use of the WebSite is restricted to those aged 18 or over only. Anyone
+                        under the age of 18 may only use the WebSite if accompanied by an adult.<br><br>Whilst We
+                        &#x9;&#x9;  endeavor to ensure that the WebSite is normally available 24 hours a day, access to the
+                        &#x9;&#x9;  WebSite is provided on a temporary basis, and Company reserve the right to withdraw or amend
+                        &#x9;&#x9;  the services We provide on the WebSite without notice. We will not be liable if for any
+                        &#x9;&#x9;  reason the WebSite is unavailable at any time or for any period.<br><br>We aim to update our
+                        &#x9;&#x9;  WebSite regularly, and may from time to time change the our services and/or our investment
+                        &#x9;&#x9;  solutions as well as the Rules, referral program and other pages of the WebSite. If the need
+                        &#x9;&#x9;  arises, We may suspend access to the WebSite, or close it indefinitely in order to improve
+                        &#x9;&#x9;  or update its features and productivity.<br><br>You are responsible for making all
+                        &#x9;&#x9;  arrangements necessary for you to have access to the WebSite and the Services, including the
+                        &#x9;&#x9;  investment, financial and funds withdrawals actions. You are also responsible for ensuring
+                        &#x9;&#x9;  that all persons who access the WebSite through your Internet connection are aware of these
+                        &#x9;&#x9;  Rules and that they comply with them and you also understand that You and not Us are
+                        &#x9;&#x9;  responsible for all electronic communications and content sent or receives from your
+                        &#x9;&#x9;  computer to Us or from Us to You.<br><br>You can create only one  Elevation Trader LTD
+                        &#x9;&#x9;  account.<br><br>We keep the right can very easily and pinpoint who is causing us of such
+                        &#x9;&#x9;  kind problems, making the multiple registrations. We will checking your IP-address, your
+                        &#x9;&#x9;  PC&rsquo;s ID and other identificators. And in case, if we will discover the customer&rsquo;s multiple
+                        &#x9;&#x9;  registrations, we shall block all accounts of such customer and all money which can be at
+                        &#x9;&#x9;  all of such accounts are will be taken away irrevocably.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Viruses, hacking and other offenses</h4>
+                    <div class="item-text">
+                      <p>
+                        You must not misuse the WebSite by knowingly introducing viruses, Trojans,
+                        worms, logic bombs, or other material which is malicious or technologically harmful. You
+                        must not attempt to gain unauthorized access to the WebSite or any part of it, the server on
+                        which the WebSite is stored, or any server, computer, or database connected to the WebSite.
+                        You must not attack the WebSite via a denial-of-service attack or a distributed
+                        denial-of-service-attack (DDoS).<br><br>By breaching this provision, you would commit a
+                        &#x9;&#x9;  criminal offence under the Computer Misuse Act #1990. We will report any such breach to the
+                        &#x9;&#x9;  relevant law enforcement authorities and We will co-operate with those authorities by
+                        &#x9;&#x9;  disclosing your identity to them. In the event of such a breach, your right to use the
+                        &#x9;&#x9;  WebSite and/or our Services will cease immediately.<br><br>We will not be liable for any
+                        &#x9;&#x9;  loss or damage caused by a distributed denial-of-service attack, viruses, or other
+                        &#x9;&#x9;  technologically harmful material that may infect your computer equipment, computer programs,
+                        &#x9;&#x9;  data, or other proprietary material due to your use of the WebSite or due to your
+                        &#x9;&#x9;  downloading of any material posted on it, or any website linked to it.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Linking Linking to the WebSite</h4>
+                    <div class="item-text">
+                      <p>
+                        You may link to our home page using the sharing tools (the unique referral
+                        links, banners) provided by Us provided you do so for non-commercial (for inviting new
+                        participants) purposes and in a way that is fair and legal and does not damage our
+                        reputation or take advantage of it. You must not establish a link in such a way as to
+                        suggest any form of association, approval, or endorsement on our part where none exists or
+                        in a way that makes content available to a third party who would not otherwise have free
+                        access to it. Authors and co-authors of an article published by Us should refer to the
+                        Company&rsquo;s Administration for further information on linking to their own article.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Our liability</h4>
+                    <div class="item-text">
+                      <p>
+                        The WebSite and the Services are provided on an &ldquo;as is&rdquo; basis. Subject to
+                        the below, Company excludes all liability whether in contract, tort (including liability for
+                        negligence), or otherwise for the suitability, accuracy, or fitness for any purpose of the
+                        WebSite and any Services and actions and limits its liability for any other liability under
+                        these Rules or any related agreement to the fees payable by you for the element of the
+                        WebSite or the Services found to be in breach of these Rules.<br><br>Subject to the below We
+                        &#x9;&#x9;  exclude all liability for loss of business revenue or profits, anticipated savings, or
+                        &#x9;&#x9;  wasted expenditure, corruption, or destruction of data or for any indirect or consequential
+                        &#x9;&#x9;  loss whatever.<br><br>Save as expressly permitted in these Rules, all warranties,
+                        &#x9;&#x9;  conditions, or other terms implied by statute, common law, or otherwise are excluded by
+                        &#x9;&#x9;  Company to the fullest extent permitted by law.<br><br>The Services may be out of date at
+                        &#x9;&#x9;  any given time, and while We may from time to time update the Services We are under no
+                        &#x9;&#x9;  obligation to do so.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Payments and Withdrawals</h4>
+                    <div class="item-text">
+                      <p>
+                        All payments requests are performed within 48 hours. All payments are made only to that payment
+                        processor, which Customer at making deposit has used.<br><br>All referral payments are made
+                        &#x9;&#x9;  only to that payment processor, which Customer&rsquo;s referral at making deposit has
+                        &#x9;&#x9;  used.<br><br>Minimal amount, which is available for withdrawal is 1 USD and 5 USD ( BTC, ETH, LTC, DOGE, DASH ).<br><br>All
+                        &#x9;&#x9;  referral payments are made only to that payment processor, which Customer&rsquo;s referral at
+                        &#x9;&#x9;  making deposit has used.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Confidentiality</h4>
+                    <div class="item-text">
+                      <p>
+                        We strongly keep any Customer data in the confidentially
+                        conditions.<br><br>Our Privacy Policy, like and other Policies, is an integral part of these
+                        &#x9;&#x9;  Rules.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Conflicting terms</h4>
+                    <div class="item-text">
+                      <p>
+                        In the event and to the extent of any conflict between the provisions of
+                        these Rules and any other agreement which can be referred to in these Rules, the provisions
+                        of the other agreement will apply.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Content Standards</h4>
+                    <div class="item-text">
+                      <p>
+                        These Content Standards apply to each a issue, regarding to your
+                        investment activity and cooperation with Us whole.<br><br>Please do not:<br>&bull; Spam by
+                        &#x9;&#x9;  reposting the same message, or very similar messages, more than once;<br>&bull; Publicize or
+                        &#x9;&#x9;  attempt to publicize anyone else&rsquo;s contact details or compromise anyone else&rsquo;s privacy in
+                        &#x9;&#x9;  any way; and/or<br>&bull; Use any name other than your bona fide family name.<br><br>In addition,
+                        &#x9;&#x9;  please do not submit issues which:<br>&bull; Include advertisements, promotions of products or
+                        &#x9;&#x9;  services, or any third-party links;<br>&bull; Are in any language other than English; and/or<br>&bull;
+                        &#x9;&#x9;  Are in full capital letters.<br><br>Furthermore an issue must:<br>&bull; Be accurate (where it
+                        &#x9;&#x9;  states facts);<br>&bull; Be genuinely held (where it states opinions);<br>&bull; Comply with the law
+                        &#x9;&#x9;  applicable in USA and in any country from which it is posted; and/or<br>&bull; Be
+                        &#x9;&#x9;  relevant.<br><br>An issue or any request to any Our feedback department must not:<br>&bull; Be
+                        &#x9;&#x9;  defamatory of any person and/or otherwise be unlawful or fraudulent, or have any unlawful or
+                        &#x9;&#x9;  fraudulent purpose or effect;<br>&bull; Be obscene, offensive, hateful, or inflammatory;<br>&bull;
+                        &#x9;&#x9;  Promote discrimination based on race, sex, religion, nationality, disability, sexual
+                        &#x9;&#x9;  orientation, or age;<br>&bull; Disclose the name, address, telephone, mobile, or fax number,
+                        &#x9;&#x9;  email address or any other personal data in respect of any individual;<br>&bull; Infringe any
+                        &#x9;&#x9;  copyright, database right, or trade mark of any other person;<br>&bull; Breach any legal duty
+                        &#x9;&#x9;  owed to a third party, such as a contractual duty or a duty of confidence;<br>&bull; Be in
+                        &#x9;&#x9;  contempt of court;<br>&bull; Be likely to harass, upset, embarrass, alarm, or annoy any other
+                        &#x9;&#x9;  person;<br>&bull; Impersonate any person, or misrepresent your identity or affiliation with any
+                        &#x9;&#x9;  person;<br>&bull; Give the impression that the contribution emanates from Company if this is not
+                        &#x9;&#x9;  the case;<br>&bull; Promote, incite any third party to commit, or assist any unlawful or criminal
+                        &#x9;&#x9;  act;<br>&bull; Contain a statement which you know or believe, or have reasonable grounds for
+                        &#x9;&#x9;  believing, that members of the public to whom the statement is, or is to be, published are
+                        &#x9;&#x9;  likely to understand as a direct or indirect encouragement or other inducement to the
+                        &#x9;&#x9;  commission, preparation, or instigation of acts of terrorism; and/or<br>&bull; Contain any
+                        &#x9;&#x9;  advertising or promote any services or web links to other websites.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Breach Breach of Content Standards</h4>
+                    <div class="item-text">
+                      <p>
+                        If, acting reasonably, We consider that a breach of the Content Standards
+                        has occurred, We may at our discretion take such action as We deem appropriate. Failure to
+                        comply with these Rules constitutes a material breach of these Rules whole on which you are
+                        permitted to use the Public Areas, and may result to a fine.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Written communications</h4>
+                    <div class="item-text">
+                      <p>
+                        Applicable laws require that some of the information or communications We
+                        send to you should be in writing. When using the WebSite, you accept that communication with
+                        Us will be mainly electronic. We will contact you by email or provide you with information
+                        by posting notices on the WebSite.You agree to this electronic means of communication and
+                        you acknowledge that all contracts, notices, information, and other communications that We
+                        provide to you electronically comply with any legal requirement that such communications be
+                        in writing. This communication does not affect your statutory rights.<br><br>You agree to
+                        &#x9;&#x9;  keep confidential all information concerning the business or affairs of Company. This does
+                        &#x9;&#x9;  not apply to any disclosure required by a court or regulatory body of competent
+                        &#x9;&#x9;  jurisdiction, trivial information, or information already publicly available or demonstrably
+                        &#x9;&#x9;  in your possession at the time of disclosure (other than as a result of breach of any
+                        &#x9;&#x9;  confidentiality obligation).<br><br>All notices given by you to Us must be given to Company
+                        &#x9;&#x9;  at admin@elevationtrader.com. We may give notice to you at the email you provide to Us at
+                        &#x9;&#x9;  registration. Notice will be deemed received and properly served immediately when posted on
+                        &#x9;&#x9;  the WebSite, 24 hours after an email is sent. In proving the service of any notice, it will
+                        &#x9;&#x9;  be sufficient to prove such email was sent to the specified email address of the Customer
+                        &#x9;&#x9;  addressee.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Severability</h4>
+                    <div class="item-text">
+                      <p>
+                        If any of these Rules are determined by any competent authority to be
+                        invalid, unlawful, or unenforceable to any extent, such term, condition, or provision will
+                        to that extent be severed from the remaining terms, conditions, and provisions which will
+                        continue to be valid to the fullest extent permitted by law.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Entire agreement</h4>
+                    <div class="item-text">
+                      <p>
+                        These Rules represent the entire agreement between us in relation to the
+                        subject matter of any contract and supersede any prior agreement, understanding, or
+                        arrangement between us, whether oral or in writing.<br><br>We each acknowledge that, in
+                        &#x9;&#x9;  entering into a contract, neither of us has relied on any representation, undertaking, or
+                        &#x9;&#x9;  promise given by the other or implied from anything said or written in negotiations between
+                        &#x9;&#x9;  us prior to such contract, except as expressly stated in these terms and conditions.<br><br>Neither
+                        &#x9;&#x9;  of us shall have any remedy in respect of any untrue statement made by the other, whether
+                        &#x9;&#x9;  orally or in writing, prior to the date of any contract (unless such untrue statement was
+                        &#x9;&#x9;  made fraudulently) and the other party&rsquo;s only remedy shall be for breach of contract as
+                        &#x9;&#x9;  provided in these Rules.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Our right to vary these Rules</h4>
+                    <div class="item-text">
+                      <p>
+                        We have the right to revise and amend these Rules or any clause contained
+                        within then from time to time to reflect changes in market conditions affecting our
+                        business, changes in technology, changes in payment methods, changes in relevant laws and
+                        regulatory requirements, and changes in our system&rsquo;s capabilities except that such revisions
+                        or amendments do not apply to any dispute between you and Us arising, or arising out of
+                        events occurring, BEFORE the date of such revision or amendment.<br><br>You will be subject
+                        &#x9;&#x9;  to the Policies and Rules in force at the time that you cooperate with Us making deposit or
+                        &#x9;&#x9;  obtaining the referral rewards, unless any change to those Policies or these Rules is
+                        &#x9;&#x9;  required to be made by law or governmental authority.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h4>Law and jurisdiction</h4>
+                    <div class="item-text">
+                      <p>
+                        You agree that the courts of USA shall have exclusive jurisdiction to
+                        settle any disputes arising out of or in connection with these Rules or their formation. For
+                        these purposes each party irrevocably submits to the jurisdiction of the courts of
+                        USA.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="0"><a class="logo" href="#"><img src="assets/img/logo.png" alt="logo"/></a></div>
+                <div class="col-lg-6 d-flex justify-content-end" data-aos="zoom-in" data-aos-delay="0"><a class="main-btn" href="#">
+                    <div class="main-btn__top-shadow">
+                      <div class="top-shadow__bg"></div>
+                    </div><span>fedback form</span>
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#play"></use>
+                    </svg></a></div>
+              </div>
+              <div class="header-nav" data-aos="zoom-in" data-aos-delay="0"><a class="active" href="/">Home</a><a href="./about.html">About us</a><a href="./invest.html">for investors</a><a href="./news.html">news</a><a href="./faq.html">faq</a><a href="./contacts.html">contacts</a><a href="./rules.html">Rules</a></div>
+              <div class="row d-flex align-items-end">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="0">
+                  <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5" data-aos="fade-left" data-aos-delay="0">
+              <div class="footer-contacts">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#address"></use>
+                </svg><span>Address: </span><a href="#">Lorem ipsum dolor sit amet, consectetur adipis</a>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-8">
+                  <div class="footer-contacts">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#mail"></use>
+                    </svg><span>E-Mail: </span><a href="#">FastFormula1@gmail.com</a>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-4"><a class="chat-btn" href="#">
+                    <div class="chat-btn__icon">
+                      <svg class="icon">
+                        <use xlink:href="assets/img/sprite.svg#tg"></use>
+                      </svg>
+                    </div><span>Telegram </span><span>Chat</span></a></div>
+              </div>
+              <div class="footer-soc">
+                <div class="footer-soc__title">
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#web"></use>
+                  </svg><span>Follow Us:</span>
+                </div>
+                <div class="soc"><a href="#">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#fb"></use>
+                    </svg></a><a href="#">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#tw"></use>
+                    </svg></a><a href="#">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#tg"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/svg4everybody.js"></script>
+    <script src="assets/libs/momentjs/moment.min.js"></script>
+    <script src="assets/libs/momentjs/moment-time-zone.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="assets/libs/swiper/swiper.min.js"></script>
+    <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/libs/touch-punch.js"></script>
+    <script src="assets/libs/chartjs/chartjs.js"></script>
+    <script src="assets/libs/formstyler/jquery.formstyler.min.js"></script>
+    <script src="assets/libs/clipboard.js/clipboard.min.js"></script>
+    <script src="assets/libs/lobibox/js/lobibox.min.js"></script>
+    <script src="assets/libs/ResponsiveTables/ng_responsive_tables.js"></script>
+    <script src="assets/libs/magnific-popup/magnific-popup.min.js"></script>
+    <script src="assets/libs/marquee/jquery.marquee.min.js"></script>
+    <script src="assets/libs/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="assets/libs/parallax/parallax.min.js"></script>
+    <script src="assets/libs/aos/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
