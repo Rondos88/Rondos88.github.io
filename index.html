@@ -1,1 +1,998 @@
-﻿test
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="assets/libs/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/libs/formstyler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/libs/lobibox/css/lobibox.min.css">
+    <link rel="stylesheet" href="assets/libs/ResponsiveTables/ng_responsive_tables.css">
+    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/libs/aos/aos.css">
+    <link rel="stylesheet" href="assets/libs/flag-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/app.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <svg class="svg-gradients">
+    <lineargradient id="gr-o" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ed0b0e"></stop>
+      <stop offset="100%" style="stop-color:#410a14"></stop>
+    </lineargradient>
+  </svg>
+  <body>
+    <div class="wrapper">
+      <section class="first">
+        <div class="first-scene">
+          <div class="first-scene__car"><img src="assets/img/car.png" alt="car"/>
+            <div class="first-scene__car-smoke"> 
+              <canvas id="main-smoke" width="1000px" height="1000px"></canvas>
+            </div>
+            <div class="first-scene__car-wheel_front"><img src="assets/img/wheel.png" alt="wheel"/>
+            </div>
+            <div class="first-scene__car-wheel_back"><img src="assets/img/wheel.png" alt="wheel"/>
+            </div>
+          </div>
+          <div class="first-scene__copter"><img src="assets/img/copter.png" alt="copter"/>
+            <div class="first-scene__copter-fan"><img src="assets/img/fan.png" alt="fan"/>
+            </div>
+          </div>
+        </div>
+        <div class="soc"><a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#inst"></use>
+            </svg></a><a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#tw"></use>
+            </svg><span>
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#fb"></use>
+              </svg></span></a><a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#tg"></use>
+            </svg><span class="flag-icon flag-icon-gb"></span></a></div>
+        <header class="header" data-aos="fade-down" data-aos-delay="0">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-3 order-1 col-6"><a class="logo" href="/"><img src="assets/img/logo.png" alt="logo"/></a></div>
+              <div class="col-md-6 order-3 order-md-2">
+                <div class="header-nav"> <a class="active" href="/">Home</a><a href="./about.html">About us</a><a href="./invest.html">for investors</a><a href="./news.html">news</a><a href="./faq.html">faq</a><a href="./contacts.html">contacts</a></div>
+              </div>
+              <div class="col-md-3 order-2 order-md-3 col-6 d-flex justify-content-end">
+                <div class="header-btns">
+                  <div class="header-btns-icon">
+                    <svg class="btn-bg" viewBox="0 0 100 100" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+                      <polygon points="20,0 100,0 100,80 80,100 0,100 0,80 0,20"></polygon>
+                    </svg>
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#sign"></use>
+                    </svg>
+                  </div><a class="sign-btn" href="#">sing up</a><a class="login-btn" href="#">login</a>
+                </div>
+                <div class="language"><a href="#"><span class="flag-icon flag-icon-gb"></span></a>
+                  <div class="language-hide">
+                    <div class="language-wrap"><a class="soon" href="#"><span class="flag-icon flag-icon-vn"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-cn"></span></a><a href="#"><span class="flag-icon flag-icon-ru"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-jp"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-de"></span></a><a class="soon" href="#"><span class="flag-icon flag-icon-fr"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="row">
+            <div class="col-10" data-aos="fade-right" data-aos-delay="0">
+              <div class="first-subtitle title-line-w">WELCOME TO</div>
+              <div class="first-title">fast formula1 company</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 col-lg-12" data-aos="fade-up" data-aos-delay="0">
+              <div class="first-stat">
+                <div class="first-stat__item">
+                  <div class="first-stat__circle first-stat__circle_1"><img src="assets/img/circle-progress.png" alt="circle-progress"></div>
+                  <div class="first-stat__val"><span class="count">300</span></div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#team"></use>
+                  </svg>
+                  <p>Lorem Ipsum</p>
+                </div>
+                <div class="first-stat__item">
+                  <div class="first-stat__circle first-stat__circle_2"><img src="assets/img/circle-progress.png" alt="circle-progress"></div>
+                  <div class="first-stat__val"><span class="count">3000</span><sup>$</sup></div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#bank"></use>
+                  </svg>
+                  <p>Lorem Ipsum</p>
+                </div>
+                <div class="first-stat__item">
+                  <div class="first-stat__circle first-stat__circle_3"><img src="assets/img/circle-progress.png" alt="circle-progress"></div>
+                  <div class="first-stat__val"><span class="count">300</span></div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <p>Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main class="content">
+        <section class="invest">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="main-subtitle" data-aos="fade-right" data-aos-delay="0">Information For Investors</div>
+                <div class="main-title title-line-b" data-aos="fade-right" data-aos-delay="100"><span>investment plans</span></div>
+                <div class="invest-car" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide invest-car__item"><img src="assets/img/invest-car-1.png" alt="invest-car-1"/>
+                      </div>
+                      <div class="swiper-slide invest-car__item"><img src="assets/img/invest-car-2.png" alt="invest-car-2"/>
+                      </div>
+                      <div class="swiper-slide invest-car__item"><img src="assets/img/invest-car-3.png" alt="invest-car-3"/>
+                      </div>
+                      <div class="swiper-slide invest-car__item"><img src="assets/img/invest-car-4.png" alt="invest-car-4"/>
+                      </div>
+                      <div class="swiper-slide invest-car__item"><img src="assets/img/invest-car-5.png" alt="invest-car-5"/>
+                      </div>
+                      <div class="swiper-slide invest-car__item"><img src="assets/img/invest-car-6.png" alt="invest-car-6"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="invest-pag" data-aos="fade-up" data-aos-delay="300">
+                  <div class="swiper-button-prev">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide invest-pag__item"><img src="assets/img/car-1.png" alt="car-1"/>
+                      </div>
+                      <div class="swiper-slide invest-pag__item"><img src="assets/img/car-2.png" alt="car-2"/>
+                      </div>
+                      <div class="swiper-slide invest-pag__item"><img src="assets/img/car-3.png" alt="car-3"/>
+                      </div>
+                      <div class="swiper-slide invest-pag__item"><img src="assets/img/car-4.png" alt="car-4"/>
+                      </div>
+                      <div class="swiper-slide invest-pag__item"><img src="assets/img/car-5.png" alt="car-5"/>
+                      </div>
+                      <div class="swiper-slide invest-pag__item"><img src="assets/img/car-6.png" alt="car-6"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                <div class="main-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+                <div class="invest-content">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide invest-content__item">
+                        <div class="invest-content__head">
+                          <div class="invest-content__title"><span>Tariff:</span>Mercedes</div>
+                          <div class="invest-content__subtitle">Pays after 1 day</div>
+                          <div class="invest-content__head-icon"><img src="assets/img/logo-small.png" alt="logo-small"/>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">1 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-1.png" alt="invest-lvl-1"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10.00 - $2999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">103%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">2 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-2.png" alt="invest-lvl-2"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$3000.00 - $9999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">104%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">3 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-3.png" alt="invest-lvl-3"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10000.00 - $49999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">106%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide invest-content__item">
+                        <div class="invest-content__head">
+                          <div class="invest-content__title"><span>Tariff:</span>Ferrari </div>
+                          <div class="invest-content__subtitle">Pays after 3 day</div>
+                          <div class="invest-content__head-icon"><img src="assets/img/logo-small.png" alt="logo-small"/>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">1 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-1.png" alt="invest-lvl-1"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10.00 - $2999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">109%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">2 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-2.png" alt="invest-lvl-2"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$3000.00 - $9999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">114%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">3 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-3.png" alt="invest-lvl-3"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10000.00 - $49999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">120%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide invest-content__item">
+                        <div class="invest-content__head">
+                          <div class="invest-content__title"><span>Tariff:</span>Red Bull</div>
+                          <div class="invest-content__subtitle">Pays after 5 day</div>
+                          <div class="invest-content__head-icon"><img src="assets/img/logo-small.png" alt="logo-small"/>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">1 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-1.png" alt="invest-lvl-1"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10.00 - $2999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">120%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">2 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-2.png" alt="invest-lvl-2"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$3000.00 - $9999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">140%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">3 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-3.png" alt="invest-lvl-3"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10000.00 - $49999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">170%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide invest-content__item">
+                        <div class="invest-content__head">
+                          <div class="invest-content__title"><span>Tariff:</span>McLaren</div>
+                          <div class="invest-content__subtitle">Pays after 10 day</div>
+                          <div class="invest-content__head-icon"><img src="assets/img/logo-small.png" alt="logo-small"/>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">1 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-1.png" alt="invest-lvl-1"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10.00 - $2999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">150%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">2 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-2.png" alt="invest-lvl-2"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$3000.00 - $9999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">200%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">3 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-3.png" alt="invest-lvl-3"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10000.00 - $49999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">280%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide invest-content__item">
+                        <div class="invest-content__head">
+                          <div class="invest-content__title"><span>Tariff:</span>Renault </div>
+                          <div class="invest-content__subtitle">Pays after 20 day</div>
+                          <div class="invest-content__head-icon"><img src="assets/img/logo-small.png" alt="logo-small"/>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">1 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-1.png" alt="invest-lvl-1"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10.00 - $2999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">220%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">2 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-2.png" alt="invest-lvl-2"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$3000.00 - $9999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">280%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">3 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-3.png" alt="invest-lvl-3"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10000.00 - $99999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">340%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide invest-content__item">
+                        <div class="invest-content__head">
+                          <div class="invest-content__title"><span>Tariff:</span>Toro Rosso</div>
+                          <div class="invest-content__subtitle">Pays after 1 day</div>
+                          <div class="invest-content__head-icon"><img src="assets/img/logo-small.png" alt="logo-small"/>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">1 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-1.png" alt="invest-lvl-1"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10.00 - $2999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">280%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">2 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-2.png" alt="invest-lvl-2"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$3000.00 - $9999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">400%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                        <div class="invest-content__lvl">
+                          <div class="invest-content__lvl-num">3 Level</div>
+                          <div class="invest-content__lvl-img"><img src="assets/img/invest-lvl-3.png" alt="invest-lvl-3"/>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Amount Spent ($)</div>
+                            <div class="invest-content__lvl-val">$10000.00 - $99999.00</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">ROI (%)</div>
+                            <div class="invest-content__lvl-val red">500%</div>
+                          </div>
+                          <div class="invest-content__lvl-col">
+                            <div class="invest-content__lvl-title">Charging</div>
+                            <div class="invest-content__lvl-title">After Investment</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="calc">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-lg-4 col-md-6 order-lg-1 order-2" data-aos="fade-down" data-aos-delay="0">
+                <div class="calc-select">
+                  <select>
+                    <option value="Mercedes - after 1 day">Mercedes - after 1 day</option>
+                    <option value="Mercedes - after 1 day">Mercedes - after 1 day</option>
+                    <option value="Mercedes - after 1 day">Mercedes - after 1 day</option>
+                  </select>
+                </div>
+                <div class="calc-row">
+                  <p>In a days:</p>
+                  <div class="calc-val">15 200<sup>BTC</sup></div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 order-lg-2 order-3" data-aos="fade-up" data-aos-delay="0">
+                <label class="calc-amount"><span>Amount</span>
+                  <input type="text" placeholder="0">
+                </label>
+                <div class="calc-row">
+                  <p>total revenue:</p>
+                  <div class="calc-val">15 200<sup>BTC</sup></div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4 order-1 order-lg-3" data-aos="fade-left" data-aos-delay="0">
+                <div class="calc-title"> 
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#calc"></use>
+                  </svg><span>calculate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-subtitle" data-aos="fade-right" data-aos-delay="0">Information About Company</div>
+                <div class="main-title title-line-b" data-aos="fade-right" data-aos-delay="100"><span>About Us</span></div>
+                <div class="about-title" data-aos="fade-right" data-aos-delay="100">Welcome To Fast Formula 1 website</div>
+                <div class="main-text" data-aos="fade-right" data-aos-delay="200">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra </p>
+                </div>
+                <div class="about-text" data-aos="fade-right" data-aos-delay="300">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum?</p>
+                </div>
+                <div class="main-text" data-aos="fade-right" data-aos-delay="400">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cert" data-aos="fade-left" data-aos-delay="0">
+                  <div class="cert-left">
+                    <div class="cert-title">Fast Formula 1 LTD</div>
+                    <div class="cert-num">#12345678</div>
+                  </div>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#cert"></use>
+                  </svg><a class="cert-link" href="#">Check Company</a>
+                </div>
+                <div class="about-img" data-aos="zoom-in" data-aos-delay="100"><img src="assets/img/about-img.png" alt="about-img"/>
+                </div>
+                <div class="main-text" data-aos="fade-left" data-aos-delay="200">
+                  <p> <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                </div><a class="main-btn" href="#" data-aos="fade-left" data-aos-delay="300">
+                  <div class="main-btn__top-shadow">
+                    <div class="top-shadow__bg"></div>
+                  </div><span>More info</span>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#play"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <sectiom class="refs">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" data-aos="flip-up" data-aos-delay="0">
+                <div class="refs-wrap">
+                  <div class="refs-left">
+                    <div class="refs-title">Referral <span>Program</span></div>
+                    <div class="refs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                  </div>
+                  <div class="refs-percent">3%</div><a class="main-btn" href="#">
+                    <div class="main-btn__top-shadow">
+                      <div class="top-shadow__bg"></div>
+                    </div><span>partners</span>
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#play"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sectiom>
+        <section class="why">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5" data-aos="fade-right" data-aos-delay="0">
+                <div class="main-subtitle">Our Advantages</div>
+                <div class="main-title title-line-b"><span>why choose Us?</span></div>
+              </div>
+              <div class="col-md-7" data-aos="fade-left" data-aos-delay="0">
+                <div class="main-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="0">
+                <div class="why-item"><img src="assets/img/why-icon-1.png" alt="why-icon-1"/>
+                  <h3>headline advantages</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="why-item"><img src="assets/img/why-icon-2.png" alt="why-icon-2"/>
+                  <h3>headline advantages</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="why-item"><img src="assets/img/why-icon-3.png" alt="why-icon-3"/>
+                  <h3>headline advantages</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="why-item"><img src="assets/img/why-icon-4.png" alt="why-icon-4"/>
+                  <h3>headline advantages</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="why-item"><img src="assets/img/why-icon-5.png" alt="why-icon-5"/>
+                  <h3>headline advantages</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                <div class="why-item"><img src="assets/img/why-icon-6.png" alt="why-icon-6"/>
+                  <h3>headline advantages</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="roadmap">
+          <div class="roadmap-scene">
+            <div class="roadmap-scene__car"><img src="assets/img/road-car.png" alt="road-car"/>
+              <div class="roadmap-scene__car-smoke"> 
+                <canvas id="road-smoke" width="1000px" height="1000px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-right" data-aos-delay="0">
+                <div class="main-subtitle">Lorem Ipsum</div>
+                <div class="main-title title-line-w"><span>road map</span></div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end" data-aos="fade-left" data-aos-delay="0"><a class="main-btn" href="#">
+                  <div class="main-btn__top-shadow">
+                    <div class="top-shadow__bg"></div>
+                  </div><span>create account</span>
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#play"></use>
+                  </svg></a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" data-aos="zoom-in" data-aos-delay="0">
+                <div class="roadmap-slider">
+                  <div class="swiper-button-prev">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide roadmap-item">
+                        <div class="roadmap-item__date"><img src="assets/img/roadmap-icon.png" alt="roadmap-icon"/>21 January 2020
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas </p>
+                      </div>
+                      <div class="swiper-slide roadmap-item">
+                        <div class="roadmap-item__date"><img src="assets/img/roadmap-icon.png" alt="roadmap-icon"/>21 January 2020
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas </p>
+                      </div>
+                      <div class="swiper-slide roadmap-item">
+                        <div class="roadmap-item__date"><img src="assets/img/roadmap-icon.png" alt="roadmap-icon"/>21 January 2020
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="stat-bg">
+          <section class="stat">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="stat-info">
+                    <div class="stat-info__item"><img src="assets/img/stat-icon-1.png" alt="stat-icon-1"/>
+                      <p>Deposits</p><span>0.00<sup>$</sup></span>
+                    </div>
+                    <div class="stat-info__item"><img src="assets/img/stat-icon-2.png" alt="stat-icon-2"/>
+                      <p>paidout</p><span>0.00<sup>$</sup></span>
+                    </div>
+                    <div class="stat-info__item"><img src="assets/img/stat-icon-3.png" alt="stat-icon-3"/>
+                      <p>registered</p><span>1 250</span>
+                    </div>
+                    <div class="stat-info__item"><img src="assets/img/stat-icon-4.png" alt="stat-icon-4"/>
+                      <p>working</p><span>300</span>
+                    </div>
+                    <div class="stat-info__item"><img src="assets/img/stat-icon-5.png" alt="stat-icon-5"/>
+                      <p>users online</p><span>100</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="main-subtitle main-subtitle_right" data-aos="fade-left" data-aos-delay="100">In Numbers</div>
+                  <div class="main-title main-title_right title-line-b title-line-b_right" data-aos="fade-left" data-aos-delay="200"><span>our statistics</span></div>
+                  <div class="main-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400"> 
+                      <div class="stat-slider" id="stat-deposit">
+                        <div class="stat-slider__head">
+                          <div class="swiper-button-prev">
+                            <svg class="icon">
+                              <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                          <div class="stat-slider__title">Deposits</div>
+                        </div>
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide stat-item">
+                              <div class="stat-item__title">
+                                <div class="stat-item__icon">
+                                  <svg class="icon">
+                                    <use xlink:href="assets/img/sprite.svg#btc-logo"></use>
+                                  </svg>
+                                </div><span>Bitcoin</span>
+                              </div>
+                              <div class="stat-item__name">Nota_Bene</div>
+                              <div class="stat-item__val">0.00000123 BTC</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400"> 
+                      <div class="stat-slider" id="stat-withdraw">
+                        <div class="stat-slider__head">
+                          <div class="stat-slider__title">Withdraw</div>
+                          <div class="swiper-button-prev">
+                            <svg class="icon">
+                              <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide stat-item">
+                              <div class="stat-item__title">
+                                <div class="stat-item__icon">
+                                  <svg class="icon">
+                                    <use xlink:href="assets/img/sprite.svg#btc-logo"></use>
+                                  </svg>
+                                </div><span>Bitcoin</span>
+                              </div>
+                              <div class="stat-item__name">Nota_Bene</div>
+                              <div class="stat-item__val">0.00000123 BTC</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="news">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="0">
+                  <div class="main-subtitle">Event News</div>
+                  <div class="main-title title-line-b"><span>news center</span></div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end" data-aos="fade-left" data-aos-delay="0"><a class="main-btn" href="#">
+                    <div class="main-btn__top-shadow">
+                      <div class="top-shadow__bg"></div>
+                    </div><span>make deposit</span>
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#play"></use>
+                    </svg></a></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="news-item"><img src="assets/img/news-img.png" alt="news-img"/>
+                    <h3>headline news</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p><a href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="news-item"><img src="assets/img/news-img.png" alt="news-img"/>
+                    <h3>headline news</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p><a href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="news-item"><img src="assets/img/news-img.png" alt="news-img"/>
+                    <h3>headline news</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p><a href="#"> <span>Read More</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="wallets">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="wallets-title" data-aos="fade-up" data-aos-delay="0">WE ACCEPT</div>
+                  <div class="wallets-list">
+                    <div class="wallets-item" data-aos="zoom-in" data-aos-delay="0"><img src="assets/img/btc.svg" alt="btc"/>
+                    </div>
+                    <div class="wallets-item" data-aos="zoom-in" data-aos-delay="100"><img src="assets/img/payeer.svg" alt="payeer"/>
+                    </div>
+                    <div class="wallets-item" data-aos="zoom-in" data-aos-delay="200"><img src="assets/img/eth.svg" alt="eth"/>
+                    </div>
+                    <div class="wallets-item" data-aos="zoom-in" data-aos-delay="300"><img src="assets/img/ltc.svg" alt="ltc"/>
+                    </div>
+                    <div class="wallets-item" data-aos="zoom-in" data-aos-delay="400"><img src="assets/img/pm.png" alt="pm"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="0"><a class="logo" href="#"><img src="assets/img/logo.png" alt="logo"/></a></div>
+                <div class="col-lg-6 d-flex justify-content-end" data-aos="zoom-in" data-aos-delay="0"><a class="main-btn" href="#">
+                    <div class="main-btn__top-shadow">
+                      <div class="top-shadow__bg"></div>
+                    </div><span>fedback form</span>
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#play"></use>
+                    </svg></a></div>
+              </div>
+              <div class="header-nav" data-aos="zoom-in" data-aos-delay="0"><a class="active" href="/">Home</a><a href="./about.html">About us</a><a href="./invest.html">for investors</a><a href="./news.html">news</a><a href="./faq.html">faq</a><a href="./contacts.html">contacts</a><a href="./rules.html">Rules</a></div>
+              <div class="row d-flex align-items-end">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="0">
+                  <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5" data-aos="fade-left" data-aos-delay="0">
+              <div class="footer-contacts">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#address"></use>
+                </svg><span>Address: </span><a href="#">Lorem ipsum dolor sit amet, consectetur adipis</a>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-8">
+                  <div class="footer-contacts">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#mail"></use>
+                    </svg><span>E-Mail: </span><a href="#">FastFormula1@gmail.com</a>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-4"><a class="chat-btn" href="#">
+                    <div class="chat-btn__icon">
+                      <svg class="icon">
+                        <use xlink:href="assets/img/sprite.svg#tg"></use>
+                      </svg>
+                    </div><span>Telegram </span><span>Chat</span></a></div>
+              </div>
+              <div class="footer-soc">
+                <div class="footer-soc__title">
+                  <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#web"></use>
+                  </svg><span>Follow Us:</span>
+                </div>
+                <div class="soc"><a href="#">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#fb"></use>
+                    </svg></a><a href="#">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#tw"></use>
+                    </svg></a><a href="#">
+                    <svg class="icon">
+                      <use xlink:href="assets/img/sprite.svg#tg"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/svg4everybody.js"></script>
+    <script src="assets/libs/momentjs/moment.min.js"></script>
+    <script src="assets/libs/momentjs/moment-time-zone.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="assets/libs/swiper/swiper.min.js"></script>
+    <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/libs/touch-punch.js"></script>
+    <script src="assets/libs/chartjs/chartjs.js"></script>
+    <script src="assets/libs/formstyler/jquery.formstyler.min.js"></script>
+    <script src="assets/libs/clipboard.js/clipboard.min.js"></script>
+    <script src="assets/libs/lobibox/js/lobibox.min.js"></script>
+    <script src="assets/libs/ResponsiveTables/ng_responsive_tables.js"></script>
+    <script src="assets/libs/magnific-popup/magnific-popup.min.js"></script>
+    <script src="assets/libs/marquee/jquery.marquee.min.js"></script>
+    <script src="assets/libs/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="assets/libs/parallax/parallax.min.js"></script>
+    <script src="assets/libs/aos/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
